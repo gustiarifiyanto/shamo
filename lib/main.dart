@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'theme.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,10 +19,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Text('Hello, Shamo!', 
-        style: GoogleFonts.agbalumo(
+        style: secondaryTextStyle.copyWith(
           fontSize: 24,
-          fontWeight: FontWeight.w600,
-        )),
+          fontWeight: semiBold
+        )
+        )
       ),
     );
   }    
